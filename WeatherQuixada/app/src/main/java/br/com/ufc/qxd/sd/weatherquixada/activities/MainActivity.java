@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         };
         XMLRPCClient client = null;
         try {
-            client = new XMLRPCClient(new URL("http://192.168.0.102:8000"));
+            client = new XMLRPCClient(new URL("http://10.0.1.124:8000"));
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
