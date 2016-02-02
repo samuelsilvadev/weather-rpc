@@ -36,7 +36,7 @@ class WeatherService:
             weather = json.dumps({'id':idcurrently,'createdat':createdat,'summary':summary,'icon':icon,'precip_intensity':precipIntensity,'precip_probability':precipProbability,'precip_type':precipType,'temperature':temperature,'apparent_temperature':apparentTemperature,'humidity':humidity,'wind_speed':windSpeed,'cloud_cover':cloudCover,'pressure':pressure,'ozone':ozone})
         return weather
 
-server = AsyncXMLRPCServer(('192.168.0.102', 8000), SimpleXMLRPCRequestHandler)
+server = AsyncXMLRPCServer(('10.0.1.124', 8000), SimpleXMLRPCRequestHandler)
 
 server.register_instance(WeatherService())
 
